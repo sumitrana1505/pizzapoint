@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Pizza Point Cafe !</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+      <nav class="menu">
+          <button aria-expanded="false" aria-controls="menu-list">
+            <span class="open">☰</span>
+            <span class="close">×</span>
+            Menu
+          </button>
+          <ul id="menu-list">
+            <li>
+              <a href="">Pizza</a>
+            </li>
+            <li>
+              <a href="">Beers</a>
+            </li>
+            <li>
+              <a href="">Wines</a>
+            </li>
+            <li>
+              <a href="">Desserts</a>
+            </li>
+            <li>
+              <a href="">Reservations</a>
+            </li>
+          </ul>
+        </nav>
+
+    <div class="top">
+      <header class="hero">
+        <h1>Pizza's Point Cafe</h1>
+        <p>Pretty Good Pizza!</p>
+      </header>
+      <div class="cta cta1">
+        <p class="price">$1.99</p>
+        <p>Pizza</p>
+      </div>
+      <div class="cta cta2">
+        <p class="price">$3.99</p>
+        <p>Pasta</p>
+      </div>
+
+    </div>
+
+    <section class="features">
+      <div class="feature">
+        <span class="icon">🍕</span>
+        <h3>Pizza</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🍔</span>
+        <h3>Burger</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🍷</span>
+        <h3>Wine</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🍟</span>
+        <h3>Pastas</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+    </section>
+
+    <section class="about">
+      <img src="images/queso-taco.png" alt="Yummy Taco" class="about__mockup">
+      <div class="about__details">
+        <h2>Featured French Fries</h2>
+        <p>Slim Profile, easy to hold and loaded with cheese.</p>
+        <p>This is the one you have been waiting for</p>
+        <button>Learn More →</button>
+      </div>
+    </section>
+
+
+    <section class="gallery">
+      <h2>Instant Grams</h2>
+      <img src="https://source.unsplash.com/201x201/?pizza" alt="">
+      <img src="https://source.unsplash.com/202x202/?burger" alt="">
+      <img src="https://source.unsplash.com/203x203/?fries" alt="">
+      <img src="https://source.unsplash.com/204x204/?nachos" alt="">
+      <img src="https://source.unsplash.com/205x205/?drinks" alt="">
+      <img src="https://source.unsplash.com/206x206/?sandwiches" alt="">
+      <img src="https://source.unsplash.com/207x207/?garlicbreads" alt="">
+      <img src="https://source.unsplash.com/208x208/?noodles" alt="">
+      <img src="https://source.unsplash.com/209x209/?cake,pizza" alt="">
+      <img src="https://source.unsplash.com/210x210/?wine,beer" alt="">
+      <img src="https://source.unsplash.com/211x211/?mocktails" alt="">
+      <img src="https://source.unsplash.com/212x212/?pasta" alt="">
+            
+      
+    </section>
+  </div>
+
+  <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+  </script>
+
+</body>
+
+</html>
